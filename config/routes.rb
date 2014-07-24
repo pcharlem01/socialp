@@ -9,6 +9,8 @@ get 'about'=>'welcome#about'
 devise_for :users
 #, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
 
+match '/profile/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], :as => :finish_signup
+
 match 'auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
 
 match 'auth/failure', to: redirect('/'), via: [:get, :post]
