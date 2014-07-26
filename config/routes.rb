@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
 
-
 root 'welcome#home'
 
 get 'welcome/about'=>'welcome#about'
 get 'welcome/sign_in'=>'welcome#users/sign_in'
 
-devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
+
+#devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
+devise_for :users, :controllers => { :registrations => "registrations",  :omniauth_callbacks => "omniauth_callbacks"}
+
 
 match '/profile/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], :as => :finish_signup
 

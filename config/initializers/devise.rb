@@ -2,10 +2,12 @@
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
 
+
   config.omniauth :facebook, "490290441104619
 ", "bdbfbaa14ad7c56a3f53c19ce74e9557"
   config.omniauth :twitter, " S7UQdAyYxXd0uPBBUzYmXM2xO", " Tju0DSdKDZUfC1TYelyPHpwNu5OKT3Mmyo9XJhC1XybqJ5frMA"
   config.omniauth :linked_in, "77h60067nuxay3", "GR40s0IcBt50uVi0"
+
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
@@ -125,6 +127,7 @@ Devise.setup do |config|
   # db field (see migrations). Until confirmed, new email is stored in
   # unconfirmed_email column, and copied to email column on successful confirmation.
   config.reconfirmable = true
+  
 
   # Defines which key will be used when confirming an account
   # config.confirmation_keys = [ :email ]
