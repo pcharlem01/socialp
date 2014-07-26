@@ -7,6 +7,7 @@ Devise.setup do |config|
 ", "bdbfbaa14ad7c56a3f53c19ce74e9557"
   config.omniauth :twitter, " S7UQdAyYxXd0uPBBUzYmXM2xO", " Tju0DSdKDZUfC1TYelyPHpwNu5OKT3Mmyo9XJhC1XybqJ5frMA"
   config.omniauth :linked_in, "77h60067nuxay3", "GR40s0IcBt50uVi0"
+  config.omniauth :instagram, "3f802131809a4e109cea3c25e310297a", " e73bc872121a47fe814aa2f2fa4572c8"
 
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
